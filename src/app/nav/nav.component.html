@@ -1,0 +1,27 @@
+<p>
+    <mat-toolbar>
+        <button mat-button [matMenuTriggerFor]="menu"><mat-icon>menu</mat-icon></button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="accueil">accueil</button>
+            <button mat-menu-item routerLink="connexion">connexion</button>
+            <button mat-menu-item routerLink="connexion">inscription</button>
+        </mat-menu>
+      <span>My App</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
+      <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+        <mat-button-toggle value="accueil" routerLink="accueil">deconnexion</mat-button-toggle>
+        <mat-button-toggle value="connexion" routerLink="connexion">connexion</mat-button-toggle>
+        <mat-button-toggle value="inscription" routerLink="connexion">inscription</mat-button-toggle>
+        
+
+      </mat-button-toggle-group>
+      
+    
+    </mat-toolbar>
+  </p>
